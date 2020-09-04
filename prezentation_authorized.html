@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LazyMarketPlace</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+</head>
+<body>
+	<main class="page">
+		<header class="header">
+			<div class="header__top container">
+				<div class="header__nav-1">
+					<div class="logo">
+						<img src="img/logo.png" alt="">
+						<span>LazyMarketPlace</span>
+					</div>
+					<div class="header__top_input">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg>
+						<input type="text" placeholder="Поиск">
+					</div>
+					<div class="header__nav-1_m">
+						<ul>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg></li></a></li>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.137 3.945c-.644-.374-1.042-1.07-1.041-1.82v-.003c.001-1.172-.938-2.122-2.096-2.122s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.667 2.712-1.985 11.715-6.862 13.306v1.749h20v-1.749c-4.877-1.591-2.195-10.594-6.863-13.306zm-3.137-2.945c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1zm3 20c0 1.598-1.392 3-2.971 3s-3.029-1.402-3.029-3h6z"/></svg></a></li>
+						</ul>
+					</div>
+					<div class="header__nav_user-nav">
+						<div class="header__nav_user-authorized">
+							<div class="header__nav_user_img">
+								<img src="img/user.png" alt="">
+							</div>
+							<div class="header__nav_user-authorized_text">
+								<h3>Филлип Боузман</h3>
+								<span>bonesybo@gmail.com</span>
+							</div>
+							<a href="" class="drop-button"><i class="fas fa-cog"></i></a>		
+						</div>
+						<div class="header_nav_user_dropmenu">
+							<ul>
+								<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30"><path d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"/></svg>Мой аккаунт</a></li>
+								<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30"><path d="M.026 24l11.974-11.607 11.974 11.607h-23.948zm11.964-23.961l-11.99 8.725v12.476l7.352-7.127-5.653-4.113 10.291-7.488 10.309 7.488-5.655 4.108 7.356 7.132v-12.476l-12.01-8.725z"/></svg>Объявления и лоты</a></li>
+								<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.304-15l-3.431 12h-2.102l2.542-9h-16.813l4.615 11h13.239l3.474-12h1.929l.743-2h-4.196z"/></svg>Покупки</a></li>
+								<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30"><path d="M17.728 20.517c-3.488 0-5.613-2.461-6.443-5.517h6.715l.333-2h-7.398c-.059-.664-.064-1.335-.014-2h7.746l.333-2h-7.755c.786-3.106 2.855-5.626 6.154-5.626 1.133 0 2.391.203 3.836.62l.765-3.162c-1.854-.552-3.616-.832-5.244-.832-5.959 0-9.541 4.152-10.594 9h-2.162l-.333 2h2.203c-.049.666-.051 1.334-.007 2h-2.53l-.333 2h3.145c1.033 4.848 4.664 9 11.085 9 1.5 0 3.004-.276 4.476-.821l-.883-3.23c-1.048.378-2.088.568-3.095.568z"/></svg>Баланс</a></li>
+								<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>Избранное</i></a></li>
+								<li><a href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 30 30"><path d="M13 2v-2l10 3v18l-10 3v-2h-9v-7h1v6h8v-18h-8v7h-1v-8h9zm-2.947 10l-3.293-3.293.707-.707 4.5 4.5-4.5 4.5-.707-.707 3.293-3.293h-9.053v-1h9.053z"/></svg>Выйти</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header__nav-2 container">
+					<ul>
+						<li><a href="#" class="active">Главная</a></li>
+						<span></span>
+						<li><a href="#">Каталог</a></li>
+						<span></span>
+						<li><a href="#">Аукцион</a></li>
+						<span></span>
+						<li><a href="#">Инвестиции</a></li>
+						<span></span>
+						<li><a href="#">Контакты</a></li>
+						<span></span>
+						<li><a href="#">Вопросы-ответы</a></li>
+						<span></span>
+						<li><a href="#">Поддержка</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__center container">
+				<div class="header__center_item-img">
+					<img src="img/header/img-1.png" alt="">
+				</div>
+				<div class="header__center_item">
+					<h3>Ищите что купить? <br>Мы поможем !</h3>
+					<span>Введите наименование желаемого товара.</span>
+					<form action="" method="" class="header__center_item_form">
+						<div class="header__center__item_input">
+						    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg>
+						    <input type="text" placeholder="Что хотите купить?">
+						    <button class="button-2">Найти</button>
+					    </div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<section class="section-1 section">
+			<div class="section__body container">
+				<h3>Каталог</h3>
+				<div class="section__catalog">
+					<div class="section__catalog_item">
+						<a href="#" class="section__catalog_item-img">
+							<img src="img/section-1/1.png" alt="">
+							<time>02.06.2020</time>
+						</a>
+						<div class="section__catalog_item-user">
+							<a href="#" class="section__catalog_item-user_img">
+								<img src="img/user.png" alt="">		
+							</a>
+							<div class="section__catalog_item-user_text">
+								<a href="#"><h3>Филлип Боузман</h3></a>
+								<span>Продавец</span>
+							</div>
+						</div>
+						<div class="section__catalog_item-place">
+							<h3>Пентхаус на берегу моря</h3>
+							<span>Рига, Простект Юнион</span>
+						</div>
+						<div class="section__catalog_item-price">
+							<h3>Цена:</h3>
+							<span>€ 1,500,000</span>
+						</div>	
+					</div>
+					<div class="section__catalog_item">
+						<a href="#" class="section__catalog_item-img">
+							<img src="img/section-1/1.png" alt="">
+							<time>02.06.2020</time>
+						</a>
+						<div class="section__catalog_item-user">
+							<a href="#" class="section__catalog_item-user_img">
+								<img src="img/user.png" alt="">		
+							</a>
+							<div class="section__catalog_item-user_text">
+								<a href="#"><h3>Филлип Боузман</h3></a>
+								<span>Продавец</span>
+							</div>
+						</div>
+						<div class="section__catalog_item-place">
+							<h3>Пентхаус на берегу моря</h3>
+							<span>Рига, Простект Юнион</span>
+						</div>
+						<div class="section__catalog_item-price">
+							<h3>Цена:</h3>
+							<span>€ 1,500,000</span>
+						</div>	
+					</div>
+					<div class="section__catalog_item">
+						<a href="#" class="section__catalog_item-img">
+							<img src="img/section-1/1.png" alt="">
+							<time>02.06.2020</time>
+						</a>
+						<div class="section__catalog_item-user">
+							<a href="#" class="section__catalog_item-user_img">
+								<img src="img/user.png" alt="">		
+							</a>
+							<div class="section__catalog_item-user_text">
+								<a href="#"><h3>Филлип Боузман</h3></a>
+								<span>Продавец</span>
+							</div>
+						</div>
+						<div class="section__catalog_item-place">
+							<h3>Пентхаус на берегу моря</h3>
+							<span>Рига, Простект Юнион</span>
+						</div>
+						<div class="section__catalog_item-price">
+							<h3>Цена:</h3>
+							<span>€ 1,500,000</span>
+						</div>	
+					</div>
+				</div>
+				<a href="#" class="button-1">Перейти в каталог</a>
+				<span>Больше недвижимости в нашем каталоге</span>
+			</div>
+		</section>
+		<section class="section-2 section">
+			<div class="section__body container">
+				<div class="section-2__column">
+					<div class="section-2__item">
+						<h3>Плюсы работы с нами</h3>
+						<p>Никаких теневых сделок, только настоящая недвижимость в отличном состоянии.</p>
+						<ul>
+							<li>
+								<span class="section-number">01</span>
+								<div class="section-block">
+									<h3>Детальный осмотр</h3>
+									<p>Наш клиент вправе детально осмотреть объект или товар, а также проверить его работоспособность.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">02</span>
+								<div class="section-block">
+									<h3>Низкий процент комиссий</h3>
+									<p>Мы предлагаем площадку для размещения ваших объявлений или лотов на аукцион с низким процентом комиссии.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">03</span>
+								<div class="section-block">
+									<h3>Безопасный платеж онлайн</h3>
+									<p>Средства резервируются на сайте, оплата за товар поступает только после вашего подтверждения.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="section-2__img">
+						<img src="img/section-1/Rectangle161.png" alt="">
+						<img src="img/section-1/Rectangle151.png" alt="">
+						<img src="img/section-1/Rectangle14.png" alt="">
+					</div>
+				</div>
+				<div class="section-2__column section-2__column_r">
+					<div class="section-2__item">
+						<h3>Почему жить в Латвии  это круто ?</h3>
+						<p>Мы расскажем вам основные плюсы этой страны.</p>
+						<ul>
+							<li>
+								<span class="section-number">01</span>
+								<div class="section-block">
+									<h3>Русский язык</h3>
+									<p>Вам не обязательно сразу знать какой-то иностранный язык.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">02</span>
+								<div class="section-block">
+									<h3>Половина населения Русские</h3>
+									<p>Такой же менталитет. Никакой разницы, только тут более доброжелательное отношение ко всему.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">03</span>
+								<div class="section-block">
+									<h3>Уровень зарплат</h3>
+									<p>Средняя зарплата в стране 800 - 1200€ на руки. Уровень жизни гораздо выше чем в России.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="section-2__img">
+						<img src="img/section-1/Rectangle161.png" alt="">
+						<img src="img/section-1/Rectangle151.png" alt="">
+						<img src="img/section-1/Rectangle15.png" alt="">
+					</div>
+				</div>
+				<div class="section-2__column section-2__column_b">
+					<div class="section-2__item">
+						<ul>
+							<li>
+								<span class="section-number">04</span>
+								<div class="section-block">
+									<h3>Лучшие условия для семьи и бизнеса</h3>
+									<p>Одни из лучших условий для создания семьи или бизнеса в этой стране.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">05</span>
+								<div class="section-block">
+									<h3>Низкий уровень налогов</h3>
+									<p>0% на реинвестирование. 10% с рентных платежей. Просто сказка.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">06</span>
+								<div class="section-block">
+									<h3>Еврозона</h3>
+									<p>Валюта в €. Прав у обычных граждан гораздо больше чем у Россиян.</p>
+								</div>
+							</li>
+							<img src="img/section-1/line.png" alt="">
+							<li>
+								<span class="section-number">07</span>
+								<div class="section-block">
+									<h3>Коридор в USA и Великобританию</h3>
+									<p>Как резиденту не нужна виза в Соединенные Штаты Америки или Великобританию. Просто сел и поехал.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="section-2__img">
+						<img src="img/section-1/Rectangle161.png" alt="">
+						<img src="img/section-1/Rectangle151.png" alt="">
+						<img src="img/section-1/Rectangle16.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-3 section">
+			<div class="section-3__body container">
+				<h3>Измени свою жизнь  в лучшее русло !</h3>
+				<p>Действуй и зарабатывай вместе с нами.</p>
+				<a href="#" class="button-3">Личный кабинет</a>
+				<div class="section-3__img">
+					<img src="img/section-3/man.png" alt="">
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__body container">
+				<div class="footer__item">
+					<div class="footer__logo">
+						<img src="img/logo.png" alt="">
+						<h3>LazyStore</h3>
+					</div>
+					<p>Купить дешевле чем построить.</p>
+					<span>(с) 2020. Все права защищены.</span>
+				</div>
+				<div class="footer__item">
+					<h3>Страницы</h3>
+					<ul>						
+						<li><a href="#" class="active">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Аукцион</a></li>
+						<li><a href="#">Инвестиции</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h3>Контакты</h3>
+					<ul>						
+						<li>
+							<a href="#"><img src="img/telegram.svg" alt="">
+							<span>Telegram</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/vk.svg" alt="">
+								<span>Вконтакте</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+79173515500" >
+								<img src="img/call.svg" alt="">
+								<span>+7 (917) 351 55 00</span>
+							</a>
+						</li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<div class="bottom_navbar">
+			<ul>
+				<li>
+					<a href="#" class="active">
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+							<path d="M3 14.828v9.172h18v-9.172l-9-8.375-9 8.375zm11 7.172h-4v-6h4v6zm10-9.852l-1.361 1.465-10.639-9.883-10.639 9.868-1.361-1.465 12-11.133 12 11.148z"/>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg height="25" viewBox="0 0 512.005 512.005" width="25" xmlns="http://www.w3.org/2000/svg">
+						<path d="M383 449.286v-418c0-8.284-6.716-15-15-15H15c-8.284 0-15 6.716-15 15v388c0 41.355 33.645 75 75 75h323.041c-9.438-12.545-15.041-28.13-15.041-45zm-303-145h48c8.284 0 15 6.716 15 15s-6.716 15-15 15H80c-8.284 0-15-6.716-15-15s6.716-15 15-15zm-15-49c0-8.284 6.716-15 15-15h48c8.284 0 15 6.716 15 15s-6.716 15-15 15H80c-8.284 0-15-6.716-15-15zm239 167H80c-8.284 0-15-6.716-15-15s6.716-15 15-15h224c8.284 0 15 6.716 15 15s-6.716 15-15 15zm15-79c0 8.284-6.716 15-15 15H192c-8.284 0-15-6.716-15-15v-112c0-8.284 6.716-15 15-15h112c8.284 0 15 6.716 15 15zm-15-161H80c-8.284 0-15-6.716-15-15s6.716-15 15-15h224c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-64H80c-8.284 0-15-6.716-15-15s6.716-15 15-15h224c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/>
+						<path d="M207 246.286h82v82h-82zM497 120.286h-84c0 339.893-.05 329.01.09 329.01 1.294 20.941 15.606 38.347 34.94 44.246 30.926 9.437 62.634-12.935 63.92-45.352.078 0 .05 7.494.05-312.904 0-8.284-6.716-15-15-15z"/>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+						<path d="M0 22h12v2h-12v-2zm11-1h-10c0-1.105.895-2 2-2h6c1.105 0 2 .895 2 2zm6.369-12.839l-2.246 2.197s6.291 5.541 8.172 7.144c.475.405.705.929.705 1.446 0 1.015-.888 1.886-1.95 1.819-.52-.032-.981-.303-1.321-.697-1.619-1.875-7.07-8.249-7.07-8.249l-2.245 2.196-5.857-5.856 5.957-5.857 5.855 5.857zm-12.299.926c-.195-.193-.458-.302-.733-.302-.274 0-.537.109-.732.302-.193.195-.303.458-.303.733 0 .274.11.537.303.732l5.513 5.511c.194.195.457.304.732.304.275 0 .538-.109.732-.304.194-.193.303-.457.303-.732 0-.274-.109-.537-.303-.731l-5.512-5.513zm8.784-8.784c-.195-.194-.458-.303-.732-.303-.576 0-1.035.467-1.035 1.035 0 .275.108.539.303.732l5.513 5.513c.194.193.456.303.731.303.572 0 1.036-.464 1.036-1.035 0-.275-.109-.539-.304-.732l-5.512-5.513z"/></svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg height="25" viewBox="0 0 480 480" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M444.967 360.527c4.432-.022 8.033 3.567 8.033 8V439.5c0 22.091-17.909 40-40 40H40c-22.091 0-40-17.909-40-40v-298c0-22.091 17.909-40 40-40h373c22.091 0 40 17.909 40 40v71.001c0 4.431-3.595 8.018-8.026 8-8.322-.034-27.356-.001-73.965-.001-26.51 0-48.009 21.49-48.009 48v44.001c0 26.509 21.492 47.999 48.002 47.999 47.302 0 65.816.067 73.965.027zM480 268.5v44c0 17.689-14.404 32-31.98 32H371c-17.64 0-32-14.35-32-32v-44c0-17.65 14.36-32 32-32h77c17.64 0 32 14.35 32 32zm-79 22a8 8 0 00-8-8h-12a8 8 0 000 16h12a8 8 0 008-8zM380.6 51.47l-7.457-2.196A8.012 8.012 0 00364.59 52c-6.074 7.708-10.711 15.693-11.48 24.837-.392 4.663 3.3 8.663 7.979 8.663h34.155c4.987 0 8.837-4.528 7.877-9.422-2.21-11.259-10.493-21.144-22.521-24.608zm-43.585 26.258c.296-9.504 3.407-17.969 8.391-26.157 2.728-4.481.455-10.331-4.577-11.812l-50.727-14.937A7.875 7.875 0 00280 32.5v45a8 8 0 008 8h41.025c4.329 0 7.855-3.446 7.99-7.772zM140 85.5h11a8 8 0 008-8v-69a8 8 0 00-8-8h-11a8 8 0 00-8 8v69a8 8 0 008 8zm92-85h-49a8 8 0 00-8 8v69a8 8 0 008 8h73a8 8 0 008-8v-45c0-17.65-14.36-32-32-32zm-124 0H97c-17.673 0-32 14.327-32 32v45a8 8 0 008 8h35a8 8 0 008-8v-69a8 8 0 00-8-8z"/></svg>
+					</a>
+				</li>
+				</li>
+				<li>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"/></svg>
+						</a>
+				</li>
+				</ul>
+		</div>
+	</main>
+	<script src="javascript/jquery/jquery-3.5.1.min.js"></script>
+	<script src="javascript/dropmenu-1.js"></script>
+	<script src="javascript/scripts.js"></script>
+</body>
+</html>
